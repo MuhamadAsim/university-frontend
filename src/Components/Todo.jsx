@@ -13,7 +13,7 @@ function Todo() {
     if (authToken) {
       dispatch(fetchTodos(userId, authToken));
     }
-  }, [dispatch]);
+  }, [dispatch,authToken,userId]);
 
   return (
     <>

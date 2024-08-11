@@ -121,10 +121,11 @@
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
     const [btnPosition, setBtnPosition] = useState('0px');
-
+    const navigate=useNavigate();
     const handleButtonClick = (position) => {
         setBtnPosition(position);
     };
@@ -143,11 +144,14 @@ export default function Login() {
 
             const result = await response.json();
             if (response.ok) {
+                let flag=false;
                 console.log("Success ", result);
                 if (typeof result.data.accessToken === 'string') {
                     try {
+                        localStorage.removeItem('accessToken');
                         localStorage.setItem('accessToken', result.data.accessToken);
                         console.log('Access token stored in local storage');
+                        navigate('/todo');
                     } catch (storageError) {
                         console.error('Error storing access token:', storageError);
                     }

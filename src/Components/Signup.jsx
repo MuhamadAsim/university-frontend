@@ -1,16 +1,18 @@
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Style.css';
 import { NavLink } from 'react-router-dom';
 
 export default function Signup() {
     const [btnPosition, setBtnPosition] = useState('150px');
+    const navigate = useNavigate(); 
 
     const handleButtonClick = (position) => {
         setBtnPosition(position);
     };
 
-    const { register, handleSubmit, formState: { errors, isSubmitting }, trigger,reset } = useForm();
+    const { register, handleSubmit, formState: { errors, isSubmitting }, trigger, reset } = useForm();
 
     const onSubmit = async (data) => {
         const result = await trigger();
@@ -31,6 +33,7 @@ export default function Signup() {
                 if (response.ok) {
                     console.log('Registration successful:', result);
                     reset();
+                    navigate('/login');
                 } else {
                     console.error('Registration failed:', result.message);
                 }
@@ -39,7 +42,6 @@ export default function Signup() {
             }
         }
     };
-
     return (
         <>
             <div className="container">
