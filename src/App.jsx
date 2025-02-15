@@ -1,6 +1,6 @@
 import Header from './Components/Header';
 import Header2 from './Components/Header2';
-import Header3 from './Components/Header3';
+import Header3 from './Components/header3';
 import Header4 from './Components/Header4';
 import { Outlet } from 'react-router-dom';
 import './App.css';
