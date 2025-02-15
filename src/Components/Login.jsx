@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './style.css';
+import './Style.css';
 const url = import.meta.env.VITE_API_URL; // ✅ Works in Vite
 
 
