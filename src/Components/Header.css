@@ -1,0 +1,23 @@
+.active-class {
+    visibility: hidden;
+    position: absolute;
+    top: 100;
+    right: 0;
+    transform: scale(0.5);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    width: 300px;
+    height: 400px;
+  }
+  
+  .inactive-class {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(1);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    width: 300px;
+    height: 400px;
+  }

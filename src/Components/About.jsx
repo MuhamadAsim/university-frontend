@@ -1,31 +1,24 @@
-export default function About() {
-    return (
-        <div className="flex flex-col min-h-screen ">
-            <main className="flex-grow p-8">
-                <section className="bg-purple-300 text-purple-800 p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
-                    <h2 className="text-3xl font-bold mb-4 text-center text-purple-700">About Todo App</h2>
-                    <p className="mb-4 text-lg ">
-                        Welcome to the Todo App, your simple solution to managing daily tasks and staying organized.
-                        Our application is designed to help you efficiently track your to-do list, ensuring you never miss a task again.
-                    </p>
-                    <p className="mb-4 text-lg">
-                        With the Todo App, you can:
-                    </p>
-                    <ul className="list-disc pl-6 mb-4 text-lg">
-                        <li>Add new tasks quickly and easily.</li>
-                        <li>Edit and update existing tasks.</li>
-                        <li>Mark tasks as completed.</li>
-                        <li>Delete tasks you no longer need.</li>
-                    </ul>
-                    <p className="mb-4 text-lg">
-                        Our mission is to provide a straightforward and effective way to manage your daily activities.
-                        We believe that by helping you stay organized, we can help you achieve your goals and improve your productivity.
-                    </p>
-                    <p className="text-lg">
-                        Thank you for choosing Todo App. We hope it helps you stay on top of your tasks and get things done!
-                    </p>
-                </section>
-            </main>
-        </div>
-    );
-}
+import React from "react";
+
+const AboutUs = () => {
+  return (
+    <div className="min-h-screen bg-gray-300 text-gray-900 flex flex-col items-center justify-center p-6">
+      <div className="max-w-4xl bg-gray-200 shadow-lg rounded-lg p-8">
+        <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">
+          About Us
+        </h1>
+        <p className="text-lg text-gray-700 leading-relaxed mb-4">
+          Welcome to the University of Engineering and Technology Lahore, a premier institution dedicated to excellence in engineering education and research. Our mission is to nurture innovation, creativity, and leadership among students, equipping them with the skills and knowledge to shape the future.
+        </p>
+        <p className="text-lg text-gray-700 leading-relaxed mb-4">
+          With a rich history and a commitment to academic excellence, UET Lahore provides top-tier programs in various engineering disciplines. Our faculty comprises experienced professionals and researchers who are committed to mentoring and guiding students toward success.
+        </p>
+        <p className="text-lg text-gray-700 leading-relaxed">
+          Join us at UET Lahore and be a part of a vibrant community that fosters learning, innovation, and growth.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default AboutUs;

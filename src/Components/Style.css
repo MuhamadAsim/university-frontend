@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
-
 * {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    color: black;
 }
 
 body {
-    background: url(back1.jpg);
+    background: rgb(255, 255, 255);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    background-color: #dfdfdf;
 }
 
 .container {
@@ -27,12 +28,12 @@ body {
     display: flex;
     flex-direction: row;
     position: relative;
-    background-color: rgba(255, 220, 220, 0.5);
-    height: 550px;
+    background-color: rgb(224, 224, 224);
+    height: 500px;
     width: 350px;
     border-radius: 30px;
     backdrop-filter: blur(45px);
-    border: 3px solid rgba(255, 220, 220, 0.5);
+    border: 3px solid rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
@@ -53,13 +54,13 @@ body {
 .heading {
     text-align: center;
     margin: 40px 0px;
-    color: purple;
+    color: black;
 }
 
-.heading>h2 {
+.heading > h2 {
     font-size: 28px;
-    font-weight: 400;
-    color: rgb(138, 0, 138);
+    font-weight: 500;
+    color: black;
 }
 
 .input_box {
@@ -67,20 +68,17 @@ body {
     height: 45px;
     margin-bottom: 10px;
     font-size: 17px;
-    color: purple;
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     outline: none;
     border-radius: 10px;
     padding: 10px 15px 0px 15px;
-    background-color: rgba(224, 223, 233, 0.6);
+    background-color: rgba(240, 240, 240, 0.9);
     backdrop-filter: blur(1px);
     position: relative;
-
 }
 
 .input {
     position: relative;
-    color: purple;
 }
 
 .input label {
@@ -88,15 +86,13 @@ body {
     left: 20px;
     top: 10px;
     transition: .4s ease-in-out;
-    color: purple;
+    color: black;
 }
 
-.input_box:focus~label,
-.input_box:valid~label {
+.input_box:focus ~ label,
+.input_box:valid ~ label {
     top: 2px;
     font-size: 10px;
-    color: purple;
-    font: bold;
     font-weight: 500;
 }
 
@@ -109,27 +105,26 @@ body {
     font-size: 20px;
     border: none;
     font-weight: 500;
-    color: white;
-    background-color: rgba(149, 6, 174, 0.701);
-    box-shadow: 0px 4px 20px rgba(62, 9, 9, 0.2);
+    background-color: #8d8989;
+    box-shadow: 0px 4px 20px rgba(36, 35, 35, 0.979);
     cursor: pointer;
     transition: .4s;
+    color: rgb(0, 0, 0);
 }
 
 .submit:hover {
-    background:  rgba(84, 7, 98, 0.746);
-    box-shadow: 0px 4px 20px rgba(129, 21, 123, 0.4);
+    background: #706f6f;
+    box-shadow: 0px 4px 20px rgba(78, 78, 78, 0.2);
 }
 
 .forgot {
-    color: purple;
     text-align: center;
     margin-top: 30px;
 }
 
 .forgot a {
-    color: purple;
     text-decoration: none;
+    color: black;
 }
 
 .switch {
@@ -139,8 +134,7 @@ body {
     width: 85%;
     left: 25px;
     height: 40px;
-    color: purple;
-    background-color: rgba(225, 225, 225, 0.16);
+    background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 10px;
 }
@@ -152,34 +146,31 @@ body {
     width: 50%;
     font-size: 15px;
     text-decoration: none;
-    overflow: hidden;
-    color: purple;
     border-radius: 10px;
     z-index: 2;
+    color: black;
 }
 
 #btn {
-    color: purple;
     position: absolute;
     bottom: 0;
     left: 0;
     height: 40px;
     width: 145px;
-    background-color: #cccccd;
+    background-color: #5a5151;
     border-radius: 10px;
-    box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.1);
     transition: 0.4s ease-in-out;
 }
 
 #btn1 {
     position: absolute;
-    color: purple;
     bottom: 0;
-    left: 150;
+    left: 150px;
     height: 40px;
     width: 145px;
-    background-color: #cccccd;
+    background-color: #332d2d;
     border-radius: 10px;
-    box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.1);
     transition: 0.4s ease-in-out;
 }
